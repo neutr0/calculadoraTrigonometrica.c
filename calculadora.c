@@ -82,22 +82,22 @@ void Cotangente() {
      printf("Digite um valor entre -1 e 1: ");
      scanf("%lf", &valor);
     if (-1.0 <= valor && valor <= 1.0) {
-        double arco_cos = asin(valor) * (180.0 / PI);
-        printf("\nO arco-seno de %lf é %.2f graus\n", valor, arco_seno);
+        double arco_sen = asin(valor) * (180.0 / PI);
+        printf("\nO arco-seno de %lf é %.2f graus\n", valor, arco_sen);
     } else {
         printf("Valor fora do intervalo [-1, 1]\n");
-
-} void ArcCos() {
+    }}    
+    void ArcCos(){
     double valor;
      printf("Digite um valor entre -1 e 1: ");
      scanf("%lf", &valor);
-    if (-1.0 <= valor && valor <= 1.0) {
+    if (-1.0 <= valor && valor <= 1.0){
         double arco_cos = acos(valor) * (180.0 / PI);
         printf("\nO arco-cosseno de %lf é %.2f graus\n", valor, arco_cos);
-    } else {
-        printf("Valor fora do intervalo [-1, 1]\n");
-
-    } void ArcTg() {
+    }else {
+          printf("Valor fora do intervalo [-1, 1]\n");
+    } }
+    void ArcTg() {
     double valor;
      printf("Digite um valor entre -1 e 1: ");
      scanf("%lf", &valor);
@@ -108,6 +108,7 @@ void Cotangente() {
         printf("Valor fora do intervalo [-1, 1]\n");
     }
 
+    }
 
 
 //============================ MENU ==============================
