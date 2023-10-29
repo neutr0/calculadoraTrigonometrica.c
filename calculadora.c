@@ -10,6 +10,7 @@ float angulo, sen, coss, tg, sec, cossec, cotg, arctg, arcsec, arccossec, arcctg
 //===================== FUNÇÕES E CÁLCULOS============================================
 
 // Utilizando void Seno para criar a função que deverá calcular o seno do ângulo determinado pelo usuário.
+
 void Seno() {
   printf("\nDigite o ângulo em graus: ");
   scanf("%f", &angulo); 
@@ -20,7 +21,8 @@ void Seno() {
    
 }
 
-// void para criar a função que calculará o coseno do ângulo determinado pelo usuário.
+// void para criar a função que calculará o cosseno do ângulo determinado pelo usuário.
+
 void Cosseno() {
   printf("\nDigite o ângulo em graus: ");
   scanf("%f", &angulo);
@@ -30,7 +32,7 @@ void Cosseno() {
   printf("\nO cosseno de %f = %f\n", angulo, coss);
    
 }
-// Função Tangente.
+// void para criar a função que calculará a tangente o do ângulo determinado pelo usuário.
 void Tangente() {
   printf("\nDigite o ângulo em graus: ");
   scanf("%f", &angulo);
@@ -40,18 +42,9 @@ void Tangente() {
   
   // Exibindo o Resultado.
   printf("\nA tangente de %f = %f\n", angulo, tg);
-}  
-void ArcSeno() {
-    double valor;
-     printf("Digite um valor entre -1 e 1: ");
-     scanf("%lf", &valor);
-    if (-1.0 <= valor && valor <= 1.0) {
-        double arco_seno = asin(valor) * (180.0 / PI);
-        printf("\nO arco-seno de %lf é %.2f graus\n", valor, arco_seno);
-    } else {
-        printf("Valor fora do intervalo [-1, 1]\n");
 }
-}
+} // void para criar a função que calculará a secante o do ângulo determinado pelo usuário.
+
  void Secante(){
   printf("\nDigite o ângulo em graus: ");
   scanf("%f", &angulo);
