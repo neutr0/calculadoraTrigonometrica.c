@@ -125,6 +125,7 @@ void Cotangente() {
     } 
 
 
+
 //============================ MENU ==============================
 //Abaixo o Menu de escolha que o usuário irá ver e selecionar a função que deseja ser calculada, e depois determinará o ângulo.
 
