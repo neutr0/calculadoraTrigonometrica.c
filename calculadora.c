@@ -40,8 +40,19 @@ void Tangente() {
   
   // Exibindo o Resultado.
   printf("\nA tangente de %f = %f\n", angulo, tg);
-   
-} void Secante() {
+}  
+void ArcSeno() {
+    double valor;
+     printf("Digite um valor entre -1 e 1: ");
+     scanf("%lf", &valor);
+    if (-1.0 <= valor && valor <= 1.0) {
+        double arco_seno = asin(valor) * (180.0 / PI);
+        printf("\nO arco-seno de %lf é %.2f graus\n", valor, arco_seno);
+    } else {
+        printf("Valor fora do intervalo [-1, 1]\n");
+}
+
+ void Secante() {
   printf("\nDigite o ângulo em graus: ");
   scanf("%f", &angulo);
   sec = 1/cos(angulo*PI/180); // Calculando a secante do ângulo.
@@ -134,10 +145,10 @@ int main() {
     case 6:
       Cotangente ();
       break;
-/*
     case 7:
       ArcSeno ();
       break;
+/*
     case 8:
       ArcCos ();
       break;
