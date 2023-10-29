@@ -76,6 +76,16 @@ void Cotangente() {
   
   // Logo após os cálculos, o resultado é exibido.
   printf("\nA cotangente de %f = %f\n", angulo, cotg);
+
+} void ArcCos() {
+    double valor;
+     printf("Digite um valor entre -1 e 1: ");
+     scanf("%lf", &valor);
+    if (-1.0 <= valor && valor <= 1.0) {
+        double arco_seno = acos(valor) * (180.0 / PI);
+        printf("\nO arco-seno de %lf é %.2f graus\n", valor, arco_seno);
+    } else {
+        printf("Valor fora do intervalo [-1, 1]\n");
 }
 
 
