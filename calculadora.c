@@ -5,7 +5,7 @@
 
 #define PI 3.14159265
 
-float angulo, sen, coss, tg, sec, cossec, cotg, arcsen, arcocos, arctg, arcsec, arccossec, arcctg;
+float angulo, sen, coss, tg, sec, cossec, cotg, arctg, arcsec, arccossec, arcctg;
 
 //===================== FUNÇÕES E CÁLCULOS============================================
 
@@ -77,16 +77,37 @@ void Cotangente() {
   // Logo após os cálculos, o resultado é exibido.
   printf("\nA cotangente de %f = %f\n", angulo, cotg);
 
+} void ArcSen() {
+    double valor;
+     printf("Digite um valor entre -1 e 1: ");
+     scanf("%lf", &valor);
+    if (-1.0 <= valor && valor <= 1.0) {
+        double arco_cos = asin(valor) * (180.0 / PI);
+        printf("\nO arco-seno de %lf é %.2f graus\n", valor, arco_seno);
+    } else {
+        printf("Valor fora do intervalo [-1, 1]\n");
+
 } void ArcCos() {
     double valor;
      printf("Digite um valor entre -1 e 1: ");
      scanf("%lf", &valor);
     if (-1.0 <= valor && valor <= 1.0) {
-        double arco_seno = acos(valor) * (180.0 / PI);
-        printf("\nO arco-seno de %lf é %.2f graus\n", valor, arco_seno);
+        double arco_cos = acos(valor) * (180.0 / PI);
+        printf("\nO arco-cosseno de %lf é %.2f graus\n", valor, arco_cos);
     } else {
         printf("Valor fora do intervalo [-1, 1]\n");
-}
+
+    } void ArcTg() {
+    double valor;
+     printf("Digite um valor entre -1 e 1: ");
+     scanf("%lf", &valor);
+    if (-1.0 <= valor && valor <= 1.0) {
+        double arco_tan = atan(valor) * (180.0 / PI);
+        printf("\nO arco-tangente de %lf é %.2f graus\n", valor, arco_tan);
+    } else {
+        printf("Valor fora do intervalo [-1, 1]\n");
+    }
+
 
 
 //============================ MENU ==============================
@@ -101,29 +122,41 @@ int main() {
   
   printf("\nMenu:\n"); // as opções serão listadas abaixo para que o usuário escolha.
 
-  printf("\n 1-Seno"); // Escolher a opção 1, irá remeter à void Seno(). 
+  printf("\n 1-Seno");
+  // Opção 3, remete à void Seno().
 
-  printf("\n 2-Cosseno"); // Opção 2, irá remeter à void Cosseno().
+  printf("\n 2-Cosseno"); 
+  // Opção 2, remete à void Cosseno().
 
-  printf("\n 3-Tangente"); // Opção 3, remete à void Tangente().
+  printf("\n 3-Tangente");
+  // Opção 3, remete à void Tangente().
   
   printf("\n 4-Secante");
+  // Opção 4, remete à void Secante()
 
   printf("\n 5-Cossecante");
+  // Opção 5, remete à void Cossecante()
 
   printf("\n 6-Cotangente");
+  // Opção 6, remete à void Cotangente()
 
   printf("\n 7-Arco Seno");
+  // Opção 7, remete à void ArcSen()
 
-  printf("\n 8-Arco Cosseno");
+  printf("\n 8-Arco Cosseno"); // Opção 8, remete à void ArcCos()
+  // Opção 8, remete à void ArcCos()
 
   printf("\n 9-Arco Tangente");
+  // Opção 9, remete à void ArcTg()
 
-  printf("\n 10-Arco Secante");
+  printf("\n 10-Arco Secante"); 
+  // Opção 10, remete à void ArcSec()
 
-  printf("\n 11-Arco Cossecante");
+  printf("\n 11-Arco Cossecante"); 
+  // Opção 11, remete à void ArcCossec()
 
-  printf("\n 12-Arco Cotangente");
+  printf("\n 12-Arco Cotangente"); 
+  // Opção 12, remete à void ArcCotg()
   
 
   printf("\n\nOpcao.: "); // Nesta linha será exibida a opção de digitar o número da opção da qual o usuário deseja obter o cálculo.
@@ -136,29 +169,45 @@ int main() {
   // Para void Seno(), teremos o caso 1 a ser resolvido.   
     case 1:
       Seno();
-      break; // Break para parar o código. 
+      break; 
+  // Break para parar o código. 
    
-   // Para void Cosseno(), teremos o caso 2 rodando a resolução.
+  // Para void Cosseno(), teremos o caso 2 rodando a resolução.
     case 2:
       Cosseno();
-      break; // Break para impedir o código de continuar infinitamente.
+      break;
+  // Break para impedir o código de continuar infinitamente.
    
-   // Para void Tangente(), o caso 3 entrará em ação.
+   
+  // Para void Tangente(), o caso 3 entrará em ação.
     case 3:
       Tangente();   
-      break; // Break novamente para cessar o funcionamento da função.
+      break;
+  // Break novamente para cessar o funcionamento da função.
+    
+  // Para void Tangente(), o caso 4 entrará em ação.
     case 4:
       Secante();
       break;
+  // Break novamente para cessar o funcionamento da função.
+
+  // Para void Cossecante(), o caso 5 entrará em ação.
     case 5:
       Cossecante();
       break;
+  // Break novamente para cessar o funcionamento da função.
+
+// Para void Cotangente(), o caso 6 entrará em ação.
     case 6:
       Cotangente ();
       break;
+  // Break novamente para cessar o funcionamento da função.
+
+// Para ArcSen(), o caso 7 entrará em ação.
     case 7:
       ArcSeno ();
       break;
+ // Break novamente para cessar o funcionamento da função.
 /*
     case 8:
       ArcCos ();
