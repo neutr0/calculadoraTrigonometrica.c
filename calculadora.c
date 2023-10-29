@@ -227,7 +227,7 @@ int main() {
       ArcSeno ();
       break;
   // Break novamente para cessar o funcionamento da função.
-/*
+
     case 8:
       ArcCos ();
       break;
@@ -243,7 +243,7 @@ int main() {
     case 12;
       ArcCotang ();
       break;
-    */
+    
     
      
      // Caso seja digitada alguma opção que não existe no Menu, a seguinte mensagem será exibida. 
