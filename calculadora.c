@@ -64,6 +64,7 @@ void Tangente() {
   
   // Logo após os cálculos, o resultado é exibido.
   printf("\nA cotangente de %f = %f\n", angulo, cotg);
+}
 
 
 //============================ MENU ==============================
