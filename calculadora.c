@@ -119,7 +119,9 @@ int main() {
   printf("\nMenu:\n"); // as opções serão listadas abaixo para que o usuário escolha.
 
   printf ("Com essa calculadora é possível determinar, por meio das funções trigonométricas, quaisquer valores, tanto em graus como em radianos");
-
+  
+  printf ("Escolha se deseja calcular em radiano ou graus: ");
+  
   printf("\n 1-Seno");
   // Opção 3, remete à void Seno().
 
