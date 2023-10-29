@@ -226,7 +226,9 @@ int main() {
       break;
     */
     
-    
+    // 🇧🇷 ATENÇÃO PATRIOTAS 🇧🇷 EM RESPOSTA AO AUTORITARISMO 📵🤚🏻 DAS REDES SOCIAIS 📵👨‍💻 NOSSO CAPITÃO 
+    //🔰 JAIR MESSIAS BOLSONARO 🔰 CONVIDA TODOS A DELETAREM SEUS PERFIS EM FORMA DE PROTESTO 💥💥 SE TRUMP NAO TEM TWITTER NÓS TAMBEM NAO TEMOS 
+    //👊🏻👊🏻 REPASSE E DELETE IMEDIATAMENTE 💚💛
      
      // Caso seja digitada alguma opção que não existe no Menu, a seguinte mensagem será exibida. 
     default:  
