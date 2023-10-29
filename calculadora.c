@@ -110,8 +110,19 @@ void Cotangente() {
     } else {
         printf("Valor fora do intervalo [-1, 1]\n");
     }
+// void para criar a função que calculará o arco-sec do ângulo determinado pelo usuário.
 
-    }
+   void ArcSec() {
+    double valor;
+     printf("Digite um valor entre -1 e 1: ");
+     scanf("%lf", &valor);
+    if (-1.0 <= valor && valor <= 1.0) {
+        double arco_sec = 1/acos(valor) * (180.0 / PI);
+        printf("\nO arco-tangente de %lf é %.2f graus\n", valor, arco_sec);
+    } else {
+        printf("Valor fora do intervalo [-1, 1]\n");
+
+    } 
 
 
 //============================ MENU ==============================
