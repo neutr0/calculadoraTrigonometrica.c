@@ -5,11 +5,11 @@
 
 #define PI 3.14159265
 
-float angulo, sen, coss, tg, sec, cossec, cotg, arctg, arcsec, arccossec, arcctg;
+float angulo, sen, coss, tg;
 
 //===================== FUNÇÕES E CÁLCULOS============================================
 
-// Utilizando void Seno para criar a função que deverá calcular o seno do ângulo determinado pelo usuário.
+// void para criar a função que calculará o seno do ângulo determinado pelo usuário.
 
 void Seno() {
   printf("\nDigite o ângulo em graus: ");
@@ -43,7 +43,8 @@ void Tangente() {
   // Exibindo o Resultado.
   printf("\nA tangente de %f = %f\n", angulo, tg);
 }
-} // void para criar a função que calculará a secante o do ângulo determinado pelo usuário.
+} 
+// void para criar a função que calculará a secante o do ângulo determinado pelo usuário.
 
  void Secante(){
   printf("\nDigite o ângulo em graus: ");
@@ -53,7 +54,10 @@ void Tangente() {
   
   // Logo após os cálculos, o resultado é exibido.
   printf("\nA secante de %f = %f\n", angulo, sec);
- } 
+ }
+
+// void para criar a função que calculará a cossecante do ângulo determinado pelo usuário.
+
  void Cossecante() {
   printf("\nDigite o ângulo em graus: ");
   scanf("%f", &angulo);
@@ -63,7 +67,9 @@ void Tangente() {
   // Logo após os cálculos, o resultado é exibido.
   printf("\nA cossecante de %f = %f\n", angulo, cossec);
 
-} 
+}
+// void para criar a função que calculará a cotangente o do ângulo determinado pelo usuário.
+
 void Cotangente() {
   printf("\nDigite o ângulo em graus: ");
   scanf("%f", &angulo);
@@ -81,7 +87,9 @@ void Cotangente() {
         printf("\nO arco-seno de %lf é %.2f graus\n", valor, arco_sen);
     } else {
         printf("Valor fora do intervalo [-1, 1]\n");
-    }}    
+    }}
+// void para criar a função que calculará o arco-cosseno do ângulo determinado pelo usuário.
+    
     void ArcCos(){
     double valor;
      printf("Digite um valor entre -1 e 1: ");
@@ -91,7 +99,7 @@ void Cotangente() {
         printf("\nO arco-cosseno de %lf é %.2f graus\n", valor, arco_cos);
     }else {
           printf("Valor fora do intervalo [-1, 1]\n");
-    } }
+    }} 
     void ArcTg() {
     double valor;
      printf("Digite um valor entre -1 e 1: ");
