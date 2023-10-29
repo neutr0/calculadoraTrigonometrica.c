@@ -197,17 +197,17 @@ int main() {
       break;
   // Break novamente para cessar o funcionamento da função.
 
-// Para void Cotangente(), o caso 6 entrará em ação.
+  // Para void Cotangente(), o caso 6 entrará em ação.
     case 6:
       Cotangente ();
       break;
   // Break novamente para cessar o funcionamento da função.
 
-// Para ArcSen(), o caso 7 entrará em ação.
+  // Para ArcSen(), o caso 7 entrará em ação.
     case 7:
       ArcSeno ();
       break;
- // Break novamente para cessar o funcionamento da função.
+  // Break novamente para cessar o funcionamento da função.
 /*
     case 8:
       ArcCos ();
