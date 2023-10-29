@@ -69,13 +69,13 @@ int main() {
 
   printf("\n 8-Arco Cosseno");
 
-  printf("\n 9-Arco Cotangente");
+  printf("\n 9-Arco Tangente");
 
   printf("\n 10-Arco Secante");
 
   printf("\n 11-Arco Cossecante");
 
-  printf("\n 12-Cotangente");
+  printf("\n 12-Arco Cotangente");
   
 
   printf("\n\nOpcao.: "); // Nesta linha será exibida a opção de digitar o número da opção da qual o usuário deseja obter o cálculo.
@@ -99,6 +99,36 @@ int main() {
     case 3:
       Tangente();   
       break; // Break novamente para cessar o funcionamento da função.
+    case 4:
+      Secante();
+      break;
+    case 5:
+      Cossecante();
+      break;
+    case 6:
+      Cotangente ();
+      break;
+    case 7:
+      ArcSeno ();
+      break;
+    case 8:
+      ArcCos ();
+      break;
+    case 9:
+      ArcTg ();
+      break;
+    case 10:
+      ArcSec ();
+      break;
+    case 11:
+      ArcCossec ();
+      break;
+    case 12;
+      ArcCotang ();
+      break;
+    
+    
+    
      
      // Caso seja digitada alguma opção que não existe no Menu, a seguinte mensagem será exibida. 
     default:  
