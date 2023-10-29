@@ -133,6 +133,7 @@ int main() {
     case 6:
       Cotangente ();
       break;
+/*
     case 7:
       ArcSeno ();
       break;
@@ -151,7 +152,7 @@ int main() {
     case 12;
       ArcCotang ();
       break;
-    
+    */
     
     
      
