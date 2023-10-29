@@ -55,7 +55,8 @@ void ArcSeno() {
  void Secante(){
   printf("\nDigite o ângulo em graus: ");
   scanf("%f", &angulo);
-  sec = 1/cos(angulo*PI/180); // Calculando a secante do ângulo.
+  sec = 1/cos(angulo*PI/180);
+  // Calculando a secante do ângulo.
   
   // Logo após os cálculos, o resultado é exibido.
   printf("\nA secante de %f = %f\n", angulo, sec);
@@ -63,7 +64,8 @@ void ArcSeno() {
  void Cossecante() {
   printf("\nDigite o ângulo em graus: ");
   scanf("%f", &angulo);
-  cossec = 1/sin(angulo*PI/180); // Calculando a cossecante do ângulo.
+  cossec = 1/sin(angulo*PI/180);
+  // Calculando a cossecante do ângulo.
   
   // Logo após os cálculos, o resultado é exibido.
   printf("\nA cossecante de %f = %f\n", angulo, cossec);
@@ -122,6 +124,8 @@ int main() {
   printf ("Seja bem-vindo (a) a calculadora de funções trigonométricas");
   
   printf("\nMenu:\n"); // as opções serão listadas abaixo para que o usuário escolha.
+
+  printf ("Com essa calculadora é possível determinar, por meio das funções trigonométricas, quaisquer valores, tanto em graus como em radianos");
 
   printf("\n 1-Seno");
   // Opção 3, remete à void Seno().
@@ -238,21 +242,3 @@ int main() {
   return(0);
 
 }
-
-//WE LIVE WE LOVE WE LIE
-
-//⠁⠁⠁⠁⠁⠁⠁⢀⣴⣶⣿⣿⣷⣶⣦⡀⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁
-//⠁⠁⠁⠁⠁⠁⣠⣿⣿⣿⣿⣿⣿⣟⣿⣿⣧⣄⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁
-//⠁⠁⠁⠁⣠⣴⣾⣿⣿⣿⣿⣿⣿⣷⣿⣷⣿⣿⣿⣷⣦⣄⡀⠁⠁⠁⠁⠁⠁
-//⢀⣠⠶⠿⠿⠛⠛⠛⠛⠛⠛⠉⠋⠉⠋⠙⠙⠋⠛⠛⠟⠿⠿⣷⣦⡀⠁⠁⠁
-//⠘⠤⡁⡐⢀⠁⠁⡀⠂⢀⠁⢀⠁⠂⠁⡀⢀⠁⡀⢀⠁⠁⠁⠁⢉⡹⠁⠁⠁
-//⠁⠁⠁⠁⠁⠄⣦⣾⡼⠁⣤⢄⠤⠠⠠⠄⢠⠁⡄⢠⢀⡢⠦⠁⠁⡀⠁⠁⠁
-//⠁⠁⠁⠁⠁⠘⠥⡄⣀⠓⢍⢡⢃⡜⢰⠨⠦⠊⠈⠁⠁⢀⢀⠁⡌⢸⡇⠁⠁
-//⠁⠁⠁⠁⠁⠁⠁⠁⠁⠉⠈⣠⣕⢀⢆⢑⡑⢤⣢⡀⠆⢐⠁⠁⢂⠜⠳⠶⡄
-//⠁⠁⠁⠁⠁⠁⠁⢀⣀⠤⢾⡟⣫⠝⠖⡡⠃⠂⠠⠙⠲⠤⣀⠁⡁⢀⢂⡐⠃
-//⠁⠁⠁⢀⣠⣴⢶⡏⠈⠁⣺⢞⡏⡝⠬⡠⢂⡘⣐⣤⠁⠁⠉⠢⣄⣀⡀⠁⠁
-//⠁⠁⠁⡛⠁⠁⠁⠁⠁⠁⣿⣮⡧⣽⢶⣵⣿⣾⣧⣿⡦⠂⠁⠁⠠⠁⡎⡩⠁
-//⠁⠁⠁⠈⠁⠁⠁⠁⠁⠁⠁⠘⠳⣻⣾⡿⡽⡧⣟⡝⢷⢖⣶⣄⠁⠁⠁⠁⠁
-//⠁⠁⠁⠁⠁⠁⠁⠁⠁⣀⠁⠁⠁⣹⡿⣿⠟⠁⠁⣤⣿⢺⡆⡟⢧⠁⠁⠁⠁
-//⠁⠁⠁⠁⠁⠁⠖⡛⠻⠛⠿⢟⢿⢻⡻⣯⠁⠁⠈⠛⠘⠁⠃⠑⠁⠁⠁⠁⠁
-//⠁⠁⠁⠁⠁⠁⠁⠁⠁⠈⠁⠁⠁⠁⠁⠈⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁
