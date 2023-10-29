@@ -5,7 +5,7 @@
 
 #define PI 3.14159265
 
-float angulo, sen, coss, tg;
+float angulo, sen, coss, tg, sec, cossec, cotg, arcsen, arcocos, arctg, arcsec, arccossec, arcctg;
 
 //===================== FUNÇÕES E CÁLCULOS============================================
 
@@ -49,7 +49,7 @@ void Tangente() {
 int main() {
   int op;
   // Cabeçalho do Menu.
-  printf("\n============== TRIGONOMETRIA CALCULO ==============\n");   
+  printf("\n============== TRIGONOMETRIA CÁLCULO ==============\n");   
 
   printf("\nMenu:\n"); // as opções serão listadas abaixo para que o usuário escolha.
 
@@ -58,6 +58,25 @@ int main() {
   printf("\n 2-Cosseno"); // Opção 2, irá remeter à void Cosseno().
 
   printf("\n 3-Tangente"); // Opção 3, remete à void Tangente().
+  
+  printf("\n 4-Secante");
+
+  printf("\n 5-Cossecante");
+
+  printf("\n 6-Cotangente");
+
+  printf("\n 7-Arco Seno");
+
+  printf("\n 8-Arco Cosseno");
+
+  printf("\n 9-Arco Cotangente");
+
+  printf("\n 10-Arco Secante");
+
+  printf("\n 11-Arco Cossecante");
+
+  printf("\n 12-Cotangente");
+  
 
   printf("\n\nOpcao.: "); // Nesta linha será exibida a opção de digitar o número da opção da qual o usuário deseja obter o cálculo.
   scanf("%d", &op);
@@ -83,7 +102,7 @@ int main() {
      
      // Caso seja digitada alguma opção que não existe no Menu, a seguinte mensagem será exibida. 
     default:  
-      printf("\nErro! Opcao inexistente.\n");   
+      printf("\nErro! Opção inexistente.\n");   
       break;
       
   }
