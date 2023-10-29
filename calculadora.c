@@ -51,16 +51,16 @@ void ArcSeno() {
     } else {
         printf("Valor fora do intervalo [-1, 1]\n");
 }
-
- void Secante() {
+}
+ void Secante(){
   printf("\nDigite o ângulo em graus: ");
   scanf("%f", &angulo);
   sec = 1/cos(angulo*PI/180); // Calculando a secante do ângulo.
   
   // Logo após os cálculos, o resultado é exibido.
   printf("\nA secante de %f = %f\n", angulo, sec);
-
-} void Cossecante() {
+ } 
+ void Cossecante() {
   printf("\nDigite o ângulo em graus: ");
   scanf("%f", &angulo);
   cossec = 1/sin(angulo*PI/180); // Calculando a cossecante do ângulo.
@@ -68,15 +68,16 @@ void ArcSeno() {
   // Logo após os cálculos, o resultado é exibido.
   printf("\nA cossecante de %f = %f\n", angulo, cossec);
 
-} void Cotangente() {
+} 
+void Cotangente() {
   printf("\nDigite o ângulo em graus: ");
   scanf("%f", &angulo);
-  cotg = 1/sen(angulo*PI/180)/cos(angulo*PI); // Calculando a cotangente do ângulo.
+  cotg = 1/sin(angulo*PI/180)/cos(angulo*PI); // Calculando a cotangente do ângulo.
   
   // Logo após os cálculos, o resultado é exibido.
   printf("\nA cotangente de %f = %f\n", angulo, cotg);
 }
-}
+
 
 //============================ MENU ==============================
 //Abaixo o Menu de escolha que o usuário irá ver e selecionar a função que deseja ser calculada, e depois determinará o ângulo.
