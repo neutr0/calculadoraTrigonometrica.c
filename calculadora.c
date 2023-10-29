@@ -11,7 +11,7 @@ float angulo, sen, coss, tg, sec, cossec, cotg, arcsen, arcocos, arctg, arcsec, 
 
 // Utilizando void Seno para criar a função que deverá calcular o seno do ângulo determinado pelo usuário.
 void Seno() {
-  printf("\nDigite o angulo em graus.: ");
+  printf("\nDigite o ângulo em graus: ");
   scanf("%f", &angulo); 
   sen = sin(angulo*PI/180); // Cálculo de seno utilizando o comando sin().
 
@@ -22,7 +22,7 @@ void Seno() {
 
 // void para criar a função que calculará o coseno do ângulo determinado pelo usuário.
 void Cosseno() {
-  printf("\nDigite o angulo em graus.: ");
+  printf("\nDigite o ângulo em graus: ");
   scanf("%f", &angulo);
   coss = cos(angulo*PI/180); // Calculando o coseno do ângulo.
   
@@ -32,7 +32,7 @@ void Cosseno() {
 }
 // Função Tangente.
 void Tangente() {
-  printf("\nDigite o angulo em graus.: ");
+  printf("\nDigite o ângulo em graus: ");
   scanf("%f", &angulo);
   
   // Cálculos tangente.
@@ -41,7 +41,30 @@ void Tangente() {
   // Exibindo o Resultado.
   printf("\nA tangente de %f = %f\n", angulo, tg);
    
-}
+} void Secante() {
+  printf("\nDigite o ângulo em graus: ");
+  scanf("%f", &angulo);
+  sec = 1/cos(angulo*PI/180); // Calculando a secante do ângulo.
+  
+  // Logo após os cálculos, o resultado é exibido.
+  printf("\nA secante de %f = %f\n", angulo, sec);
+
+} void Cossecante() {
+  printf("\nDigite o ângulo em graus: ");
+  scanf("%f", &angulo);
+  cossec = 1/sin(angulo*PI/180); // Calculando a cossecante do ângulo.
+  
+  // Logo após os cálculos, o resultado é exibido.
+  printf("\nA cossecante de %f = %f\n", angulo, cossec);
+
+} void Cotangente() {
+  printf("\nDigite o ângulo em graus: ");
+  scanf("%f", &angulo);
+  cotg = 1/tan(angulo*PI/180); // Calculando a cotangente do ângulo.
+  
+  // Logo após os cálculos, o resultado é exibido.
+  printf("\nA cotangente de %f = %f\n", angulo, cotg);
+
 
 //============================ MENU ==============================
 //Abaixo o Menu de escolha que o usuário irá ver e selecionar a função que deseja ser calculada, e depois determinará o ângulo.
@@ -50,7 +73,9 @@ int main() {
   int op;
   // Cabeçalho do Menu.
   printf("\n============== TRIGONOMETRIA CÁLCULO ==============\n");   
-
+  
+  printf ("Seja bem-vindo (a) a calculadora de funções trigonométricas");
+  
   printf("\nMenu:\n"); // as opções serão listadas abaixo para que o usuário escolha.
 
   printf("\n 1-Seno"); // Escolher a opção 1, irá remeter à void Seno(). 
