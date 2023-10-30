@@ -287,40 +287,42 @@ void SecanteR(){
   printf("\nA cotangente de %f rad's = %f\n", radiano, FcotgR);}
 
  void arcSenR() {
-     printf("Digite um valor entre -1 e 1: ");
+     printf("Digite um valor: ");
      scanf("%f", &radiano);
     angulo = radiano*180/PI;
     if (-1.0 <= angulo && angulo <= 1.0) {
         double Arcs = asin(angulo) * (180.0 / PI);
-        printf("\nO arco-seno de %lf é %.2f graus\n", radiano, Arcs);
+        printf("\nO arco-seno de %lf rad's é %.2f radianos\n", radiano, Arcs);
     } else {
-        printf("Valor fora do intervalo [-1, 1]\n");
-    }}
-
-    void arccosR() {
-     printf("Digite um valor entre -1 e 1: ");
-     scanf("%f", &radiano);
-    angulo = radiano*180/PI;
-    if (-1.0 <= angulo && angulo <= 1.0) {
-        double Arcos = acos(angulo) * (180.0 / PI);
-        printf("\nO arco-cosseno de %lf é %.2f graus\n", radiano, Arcos);
-    } else {
-        printf("Valor fora do intervalo [-1, 1]\n");
+        
     }}
     
+    void ArcCos(){
+    double valor;
+     printf("Digite um valor: ");
+     scanf("%lf", &radiano);
+     angulo = radiano*180/PI;
+    if (-1.0 <= valor && valor <= 1.0){
+        double arco_cos = acos(valor) * (180.0 / PI);
+        printf("\nO arco-cosseno de %lf rad's é %.2f radianos\n", radiano, arco_cos);
+    }else {
+          
+    }} 
+
      void arcTgR() {
-     printf("Digite um valor entre -1 e 1: ");
+     printf("Digite um valor: ");
      scanf("%f", &radiano);
     angulo = radiano*180/PI;
     if (-1.0 <= angulo && angulo <= 1.0) {
-        double Arctg = atan(angulo) * (180.0 / PI);
-        printf("\nO arco-tangente de %lf é %.2f graus\n", radiano, Arctg);
+        double Arctg = asin(angulo) * (180.0 / PI);
+        printf("\nO arco-seno de %lf rad's é %.2f radianos\n", radiano, Arctg);
     } else {
-        printf("Valor fora do intervalo [-1, 1]\n");
+        
     }} 
+
     
      void arcsec() {
-     printf("Digite um valor entre -1 e 1: ");
+     printf("Digite um valor: ");
      scanf("%f", &radiano);
     angulo = radiano*180/PI;
     if (-1.0 <= angulo && angulo <= 1.0) {
@@ -331,7 +333,7 @@ void SecanteR(){
     }}
 
     void arccossecante() {
-     printf("Digite um valor entre -1 e 1: ");
+     printf("Digite um valor: ");
      scanf("%f", &radiano);
     angulo = radiano*180/PI;
     if (-1.0 <= angulo && angulo <= 1.0) {
@@ -342,7 +344,7 @@ void SecanteR(){
     }}
 
      void arccotangente() {
-     printf("Digite um valor entre -1 e 1: ");
+     printf("Digite um valor: ");
      scanf("%f", &radiano);
     angulo = radiano*180/PI;
     if (-1.0 <= angulo && angulo <= 1.0) {
