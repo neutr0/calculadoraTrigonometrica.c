@@ -3,7 +3,7 @@ No entanto, notamos que não seria possível realizá-lo, uma vez que seria nece
 o tema do trabalho para "Calculadora de Funções Trigonométricas, ou seja, desde a função seno até a função arco cotangente. 
 Atenciosamente. */
 
-
+// incluindo as bibliotecas necessárias.
 #include <stdio.h>
 #include <math.h>
 
