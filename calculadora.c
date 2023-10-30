@@ -1,3 +1,9 @@
+/* Olá, nós do grupo composto por: Lucas S., João Pedro S., Luan V., Mateus F. e Henrique M. inicialmente faríamos o "Cardápio de Carros";
+No entanto, notamos que não seria possível realizá-lo, uma vez que seria necessário utilizar banco de dados. Dessa forma, decidimos mudar
+o tema do trabalho para "Calculadora de Funções Trigonométricas, ou seja, desde a função seno até a função arco cotangente. 
+Atenciosamente. */
+
+
 #include <stdio.h>
 #include <math.h>
 
@@ -281,38 +287,70 @@ void SecanteR(){
   printf("\nA cotangente de %f rad's = %f\n", radiano, FcotgR);}
 
  void arcSenR() {
-     printf("Digite um valor: ");
+     printf("Digite um valor entre -1 e 1: ");
      scanf("%f", &radiano);
     angulo = radiano*180/PI;
     if (-1.0 <= angulo && angulo <= 1.0) {
         double Arcs = asin(angulo) * (180.0 / PI);
-        printf("\nO arco-seno de %lf rad's é %.2f radianos\n", radiano, Arcs);
+        printf("\nO arco-seno de %lf é %.2f graus\n", radiano, Arcs);
     } else {
-        
+        printf("Valor fora do intervalo [-1, 1]\n");
     }}
-    
-    void ArcCos(){
-    double valor;
-     printf("Digite um valor: ");
-     scanf("%lf", &radiano);
-     angulo = radiano*180/PI;
-    if (-1.0 <= valor && valor <= 1.0){
-        double arco_cos = acos(valor) * (180.0 / PI);
-        printf("\nO arco-cosseno de %lf rad's é %.2f radianos\n", radiano, arco_cos);
-    }else {
-          
-    }} 
 
-     void arcTgR() {
-     printf("Digite um valor: ");
+    void arccosR() {
+     printf("Digite um valor entre -1 e 1: ");
      scanf("%f", &radiano);
     angulo = radiano*180/PI;
     if (-1.0 <= angulo && angulo <= 1.0) {
-        double Arctg = asin(angulo) * (180.0 / PI);
-        printf("\nO arco-seno de %lf rad's é %.2f radianos\n", radiano, Arctg);
+        double Arcos = acos(angulo) * (180.0 / PI);
+        printf("\nO arco-cosseno de %lf é %.2f graus\n", radiano, Arcos);
     } else {
-        
+        printf("Valor fora do intervalo [-1, 1]\n");
+    }}
+    
+     void arcTgR() {
+     printf("Digite um valor entre -1 e 1: ");
+     scanf("%f", &radiano);
+    angulo = radiano*180/PI;
+    if (-1.0 <= angulo && angulo <= 1.0) {
+        double Arctg = atan(angulo) * (180.0 / PI);
+        printf("\nO arco-tangente de %lf é %.2f graus\n", radiano, Arctg);
+    } else {
+        printf("Valor fora do intervalo [-1, 1]\n");
     }} 
+    
+     void arcsec() {
+     printf("Digite um valor entre -1 e 1: ");
+     scanf("%f", &radiano);
+    angulo = radiano*180/PI;
+    if (-1.0 <= angulo && angulo <= 1.0) {
+        double Arcsecante = 1/cos(angulo) * (180.0 / PI);
+        printf("\nO arco-secante de %lf é %.2f graus\n", radiano, Arcsecante);
+    } else {
+        printf("Valor fora do intervalo [-1, 1]\n");
+    }}
+
+    void arccossecante() {
+     printf("Digite um valor entre -1 e 1: ");
+     scanf("%f", &radiano);
+    angulo = radiano*180/PI;
+    if (-1.0 <= angulo && angulo <= 1.0) {
+        double Arcossecante = 1/sin(angulo) * (180.0 / PI);
+        printf("\nO arco-cossecante de %lf é %.2f graus\n", radiano, Arcossecante);
+    } else {
+        printf("Valor fora do intervalo [-1, 1]\n");
+    }}
+
+     void arccotangente() {
+     printf("Digite um valor entre -1 e 1: ");
+     scanf("%f", &radiano);
+    angulo = radiano*180/PI;
+    if (-1.0 <= angulo && angulo <= 1.0) {
+        double arccotan = 1/tan(angulo) * (180.0 / PI);
+        printf("\nO arco-cotangente de %lf é %.2f graus\n", radiano, arccotan);
+    } else {
+        printf("Valor fora do intervalo [-1, 1]\n");
+    }}
 
 
 
@@ -396,43 +434,43 @@ int main() {
 
   // Para void Cotangente(), o caso 6 entrará em ação.
     case 6:
-      Cotangente ();
+      CotangenteR ();
       break;
   // Break novamente para cessar o funcionamento da função.
 
   // Para ArcSen(), o caso 7 entrará em ação.
     case 7:
-      ArcSen();
+      arcSenR();
       break;
   // Break novamente para cessar o funcionamento da função.
 
   // Para ArcCos(), o caso 8 entrará em ação.
     case 8:
-      ArcCos ();
+      arccosR ();
       break;
   // Break novamente para cessar o funcionamento da função. 
 
   // Para ArcTg(), o caso 9 entrará em ação.
     case 9:
-      ArcTg ();
+      arcTgR ();
       break;
   // Break novamente para cessar o funcionamento da função.  
     
   // Para ArcSec(), o caso 7 entrará em ação.
     case 10:
-      ArcSec ();
+      arcsec ();
       break;
   // Break novamente para cessar o funcionamento da função.
 
   // Para ArcCossec(), o caso 11 entrará em ação.
     case 11:
-      ArcCossec ();
+      arccossecante ();
       break;
   // Break novamente para cessar o funcionamento da função.
 
   // Para ArcCotang(), o caso 12 entrará em ação.
     case 12:
-      ArcCotang ();
+      arccotangente ();
       break;
   // Break novamente para cessar o funcionamento da função.
      
