@@ -5,7 +5,7 @@
 
 #define PI 3.14159265
 
-float angulo, sen, coss, tg;
+float angulo, sen, coss, tg, op, cotg, sec, cossec;
 
 //===================== FUNÇÕES E CÁLCULOS============================================
 
@@ -43,7 +43,6 @@ void Tangente() {
   // Exibindo o Resultado.
   printf("\nA tangente de %f = %f\n", angulo, tg);
 }
-} 
 // void para criar a função que calculará a secante o do ângulo determinado pelo usuário.
 
  void Secante(){
@@ -109,10 +108,10 @@ void Cotangente() {
         printf("\nO arco-tangente de %lf é %.2f graus\n", valor, arco_tan);
     } else {
         printf("Valor fora do intervalo [-1, 1]\n");
-    }
+    }}
 // void para criar a função que calculará o arco-sec do ângulo determinado pelo usuário.
 
-   void ArcSec() {
+   void ArcSec(){
     double valor;
      printf("Digite um valor entre -1 e 1: ");
      scanf("%lf", &valor);
@@ -122,7 +121,7 @@ void Cotangente() {
     } else {
         printf("Valor fora do intervalo [-1, 1]\n");
 
-    } 
+    }}
 
 
 
@@ -184,7 +183,7 @@ int main() {
 
   //===========Após a escolha do usuário, se iniciação os processos para resolução============= 
   
-  switch(op) {
+  switch(op){
     
   // Para void Seno(), teremos o caso 1 a ser resolvido.   
     case 1:
@@ -225,7 +224,7 @@ int main() {
 
   // Para ArcSen(), o caso 7 entrará em ação.
     case 7:
-      ArcSeno ();
+      ArcSen();
       break;
   // Break novamente para cessar o funcionamento da função.
 /*
