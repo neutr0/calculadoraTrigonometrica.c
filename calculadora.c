@@ -140,9 +140,16 @@ int main() {
   printf ("Com essa calculadora é possível determinar, por meio das funções trigonométricas, quaisquer valores do círculo trigonométrico, tanto em graus como em radianos");
   
   printf ("Escolha se deseja calcular em radiano ou graus: ");
+
+  printf ("\n Graus");
+
+  printf ("\n Radianos");
+
+  if (op == 'Graus'){
+  
   
   printf("\n 1-Seno");
-  // Opção 3, remete à void Seno().
+  // Opção 1, remete à void Seno().
 
   printf("\n 2-Cosseno"); 
   // Opção 2, remete à void Cosseno().
@@ -180,7 +187,7 @@ int main() {
 
   printf("\n\nOpcao.: "); // Nesta linha será exibida a opção de digitar o número da opção da qual o usuário deseja obter o cálculo.
   scanf("%d", &op);
-
+  }
   //===========Após a escolha do usuário, se iniciação os processos para resolução============= 
   
   switch(op){
