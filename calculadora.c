@@ -263,12 +263,24 @@ void SecanteR(){
     double FcossecR;
      printf("\nDigite o ângulo em radianos: ");
       scanf("%f", &angulo);
+      angulo = radiano*180/PI;
     cossec = 1/sin(angulo*PI/180);
     // Calculando a cossecante do ângulo.
   
     // Logo após os cálculos, o resultado é exibido.
     printf("\nA cossecante de %f rad's = %f\n", radiano, FcossecR);
 
+}
+void CotangenteR() {
+    double FcotgR;
+  printf("\nDigite o ângulo em radianos: ");
+  scanf("%f", &angulo);
+  angulo = radiano*180/PI;
+
+  FcotgR = 1/sin(angulo*PI/180)/cos(angulo*PI); // Calculando a cotangente do ângulo.
+  
+  // Logo após os cálculos, o resultado é exibido.
+  printf("\nA cotangente de %f rad's= %f\n", angulo, FcotgR);
 }
 
 
