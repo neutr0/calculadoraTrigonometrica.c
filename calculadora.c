@@ -502,7 +502,7 @@ void FcossecR() {
     // Logo após os cálculos, o resultado é exibido.
     printf("\nA cossecante de %f rad's = %f\n", radiano, FcossecR);}*/
 
-//WE LIVE, WE LOVE, WE LIE
+//Aqui jaz uma projeção "indo ali."
 
 //⠁⠁⠁⠁⠁⠁⠁⢀⣴⣶⣿⣿⣷⣶⣦⡀⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁
 //⠁⠁⠁⠁⠁⠁⣠⣿⣿⣿⣿⣿⣿⣟⣿⣿⣧⣄⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁
