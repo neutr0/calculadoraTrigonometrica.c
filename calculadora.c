@@ -1,7 +1,6 @@
-/* Olá, nós do grupo composto por: Lucas Santos, João Pedro Santos, Luan Vitor Paiva e Henrique Mendes.
-Inicialmente faríamos o projeto de tema "Cardápio de Carros";
-No entanto, notamos que não seria possível realizá-lo, uma vez que seria necessário utilizar banco de dados. Diante disso, decidimos mudar
-o tema do trabalho para "Calculadora de Funções Trigonométricas", ou seja, desde a função seno até a função arco cotangente. 
+/* Olá, nós do grupo composto por: Lucas S., João Pedro S., Luan V., Mateus F. e Henrique M. inicialmente faríamos o "Cardápio de Carros";
+No entanto, notamos que não seria possível realizá-lo, uma vez que seria necessário utilizar banco de dados. Dessa forma, decidimos mudar
+o tema do trabalho para "Calculadora de Funções Trigonométricas, ou seja, desde a função seno até a função arco cotangente. 
 Atenciosamente. */
 
 
@@ -33,8 +32,7 @@ void Seno() {
 void Cosseno() {
   printf("\nDigite o ângulo em graus: ");
   scanf("%f", &angulo);
-  coss = cos(angulo*PI/180); 
-  // Calculando o coseno do ângulo.
+  coss = cos(angulo*PI/180); // Calculando o coseno do ângulo.
   
   // Logo após os cálculos, o resultado é exibido.
   printf("\nO cosseno de %f = %f\n", angulo, coss);
@@ -80,11 +78,9 @@ void Tangente() {
 void Cotangente() {
   printf("\nDigite o ângulo em graus: ");
   scanf("%f", &angulo);
-  cotg = 1/sin(angulo*PI/180)/cos(angulo*PI); 
-  // Calculando a cotangente do ângulo.
+  cotg = 1/sin(angulo*PI/180)/cos(angulo*PI); // Calculando a cotangente do ângulo.
   
-// Logo após os cálculos, o resultado é exibido.
-
+  // Logo após os cálculos, o resultado é exibido.
   printf("\nA cotangente de %f = %f\n", angulo, cotg);
 
 } void ArcSen() {
@@ -97,7 +93,6 @@ void Cotangente() {
     } else {
         printf("Valor fora do intervalo [-1, 1]\n");
     }}
-
 // void para criar a função que calculará o arco-cosseno do ângulo determinado pelo usuário.
     
     void ArcCos(){
@@ -120,7 +115,7 @@ void Cotangente() {
     } else {
         printf("Valor fora do intervalo [-1, 1]\n");
     }}
-// void para criar a função que calculará o arco-sececante do ângulo determinado pelo usuário.
+// void para criar a função que calculará o arco-sec do ângulo determinado pelo usuário.
 
    void ArcSec(){
     double valor;
@@ -131,8 +126,7 @@ void Cotangente() {
         printf("\nO arco-tangente de %lf é %.2f graus\n", valor, arco_sec);
     } else {
         printf("Valor fora do intervalo [-1, 1]\n");
-    
-// void para criar a função que calculará o arco-cossecante do ângulo determinado pelo usuário.
+
     }}
    void ArcCossec(){
     double valor;
@@ -143,8 +137,6 @@ void Cotangente() {
         printf("\nO arco-cossecante de %lf é %.2f graus\n", valor, arco_cossec);
     } else {
         printf("Valor fora do intervalo [-1, 1]\n");
-      
-// void para criar a função que calculará o arco-cotangente do ângulo determinado pelo usuário.
     }} 
    void ArcCotang(){
     double valor;
@@ -194,7 +186,7 @@ void Cotangente() {
   printf("\n 12-Arco Cotangente"); 
   // Opção 12, remete à void ArcCotg()
 
-  } mostrarOPradianos (){
+  } void mostrarOPradianos (){
     
   printf("\n 1-Seno");
   // Opção 1, remete à void Seno().
@@ -370,7 +362,7 @@ void SecanteR(){
 //Abaixo o Menu de escolha que o usuário irá ver e selecionar a função que deseja ser calculada, e depois determinará o ângulo.
 
 int main() {
-  int op, op2;
+  int op, op2, num1 = 1, num2 = 2;
   // Cabeçalho do Menu.
   printf("\n============== TRIGONOMETRIA CÁLCULO ==============\n");   
   
@@ -402,12 +394,15 @@ int main() {
   mostrarOPradianos();
   break;
 
+
+
   default:
   break;
   }
- 
+ if (op==2){
   printf("\n\nOpcao.: "); // Nesta linha será exibida a opção de digitar o número da opção da qual o usuário deseja obter o cálculo.
   scanf("%d", &op2);
+ 
   switch (op2){
    
   // Para void Seno(), teremos o caso 1 a ser resolvido.   
@@ -487,10 +482,92 @@ int main() {
     default:  
       printf("\nErro! Opção inexistente.\n");   
       break;
-   
-    
-  } 
+  }
+  } else if (op==1){
+    printf("\n\nOpcao.: "); // Nesta linha será exibida a opção de digitar o número da opção da qual o usuário deseja obter o cálculo.
+    scanf("%d", &op2);
  
+  switch (op2){
+   
+  // Para void Seno(), teremos o caso 1 a ser resolvido.   
+    case 1:
+      Seno();
+      break; 
+  // Break para parar o código. 
+   
+  // Para void Cosseno(), teremos o caso 2 rodando a resolução.
+    case 2:
+      Cosseno();
+      break;
+  // Break para impedir o código de continuar infinitamente.
+   
+   
+  // Para void Tangente(), o caso 3 entrará em ação.
+    case 3:
+     Tangente();   
+      break;
+  // Break novamente para cessar o funcionamento da função.
+    
+  // Para void Tangente(), o caso 4 entrará em ação.
+    case 4:
+      Secante();
+      break;
+  // Break novamente para cessar o funcionamento da função.
+
+  // Para void Cossecante(), o caso 5 entrará em ação.
+    case 5:
+      Cossecante();
+      break;
+  // Break novamente para cessar o funcionamento da função.
+
+  // Para void Cotangente(), o caso 6 entrará em ação.
+    case 6:
+     Cotangente ();
+      break;
+  // Break novamente para cessar o funcionamento da função.
+
+  // Para ArcSen(), o caso 7 entrará em ação.
+    case 7:
+      ArcSen();
+      break;
+  // Break novamente para cessar o funcionamento da função.
+
+  // Para ArcCos(), o caso 8 entrará em ação.
+    case 8:
+      ArcCos ();
+      break;
+  // Break novamente para cessar o funcionamento da função. 
+
+  // Para ArcTg(), o caso 9 entrará em ação.
+    case 9:
+      ArcTg ();
+      break;
+  // Break novamente para cessar o funcionamento da função.  
+    
+  // Para ArcSec(), o caso 7 entrará em ação.
+    case 10:
+    ArcSec ();
+      break;
+  // Break novamente para cessar o funcionamento da função.
+
+  // Para ArcCossec(), o caso 11 entrará em ação.
+    case 11:
+      ArcCossec ();
+      break;
+  // Break novamente para cessar o funcionamento da função.
+
+  // Para ArcCotang(), o caso 12 entrará em ação.
+    case 12:
+      ArcCotang ();
+      break;
+  // Break novamente para cessar o funcionamento da função.
+     
+  // Caso seja digitada alguma opção que não existe no Menu, a seguinte mensagem será exibida. 
+    default:  
+      printf("\nErro! Opção inexistente.\n");   
+      break;
+  } 
+  }
   return(0);
 
 }
@@ -510,20 +587,4 @@ void FcossecR() {
     // Logo após os cálculos, o resultado é exibido.
     printf("\nA cossecante de %f rad's = %f\n", radiano, FcossecR);}*/
 
-//Aqui jaz uma projeção "indo ali."
 
-//⠁⠁⠁⠁⠁⠁⠁⢀⣴⣶⣿⣿⣷⣶⣦⡀⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁
-//⠁⠁⠁⠁⠁⠁⣠⣿⣿⣿⣿⣿⣿⣟⣿⣿⣧⣄⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁
-//⠁⠁⠁⠁⣠⣴⣾⣿⣿⣿⣿⣿⣿⣷⣿⣷⣿⣿⣿⣷⣦⣄⡀⠁⠁⠁⠁⠁⠁
-//⢀⣠⠶⠿⠿⠛⠛⠛⠛⠛⠛⠉⠋⠉⠋⠙⠙⠋⠛⠛⠟⠿⠿⣷⣦⡀⠁⠁⠁
-//⠘⠤⡁⡐⢀⠁⠁⡀⠂⢀⠁⢀⠁⠂⠁⡀⢀⠁⡀⢀⠁⠁⠁⠁⢉⡹⠁⠁
-//⠁⠁⠁⠁⠁⠄⣦⣾⡼⠁⣤⢄⠤⠠⠠⠄⢠⠁⡄⢠⢀⡢⠦⠁⠁⡀⠁⠁⠁
-//⠁⠁⠁⠁⠁⠘⠥⡄⣀⠓⢍⢡⢃⡜⢰⠨⠦⠊⠈⠁⠁⢀⢀⠁⡌⢸⡇⠁⠁
-//⠁⠁⠁⠁⠁⠁⠁⠁⠁⠉⠈⣠⣕⢀⢆⢑⡑⢤⣢⡀⠆⢐⠁⠁⢂⠜⠳⠶⡄
-//⠁⠁⠁⠁⠁⠁⠁⢀⣀⠤⢾⡟⣫⠝⠖⡡⠃⠂⠠⠙⠲⠤⣀⠁⡁⢀⢂⡐⠃
-//⠁⠁⠁⢀⣠⣴⢶⡏⠈⠁⣺⢞⡏⡝⠬⡠⢂⡘⣐⣤⠁⠁⠉⠢⣄⣀⡀⠁⠁
-//⠁⠁⠁⡛⠁⠁⠁⠁⠁⠁⣿⣮⡧⣽⢶⣵⣿⣾⣧⣿⡦⠂⠁⠁⠠⠁⡎⡩⠁
-//⠁⠁⠁⠈⠁⠁⠁⠁⠁⠁⠁⠘⠳⣻⣾⡿⡽⡧⣟⡝⢷⢖⣶⣄⠁⠁⠁⠁⠁
-//⠁⠁⠁⠁⠁⠁⠁⠁⠁⣀⠁⠁⠁⣹⡿⣿⠟⠁⠁⣤⣿⢺⡆⡟⢧⠁⠁⠁⠁
-//⠁⠁⠁⠁⠁⠁⠖⡛⠻⠛⠿⢟⢿⢻⡻⣯⠁⠁⠈⠛⠘⠁⠃⠑⠁⠁⠁⠁⠁
-//⠁⠁⠁⠁⠁⠁⠁⠁⠁⠈⠁⠁⠁⠁⠁⠈⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁
