@@ -78,7 +78,7 @@ void Tangente() {
 void Cotangente() {
   printf("\nDigite o ângulo em graus: ");
   scanf("%f", &angulo);
-  cotg = (1/sin*(angulo*PI/180))*(cos*(angulo*PI/180)); // Calculando a cotangente do ângulo.
+  cotg = 1/sin(angulo*PI/180)/cos(angulo*PI); // Calculando a cotangente do ângulo.
   
   // Logo após os cálculos, o resultado é exibido.
   printf("\nA cotangente de %f = %f\n", angulo, cotg);
@@ -121,11 +121,11 @@ void Cotangente() {
     double valor;
      printf("Digite um valor entre -1 e 1: ");
      scanf("%lf", &valor);
-    if (-1.0 <= valor && valor <= 1.0) {
+    if ( valor >= 1 || valor <= -1) {
         double arco_sec = 1/acos(valor) * (180.0 / PI);
         printf("\nO arco-tangente de %lf é %.2f graus\n", valor, arco_sec);
     } else {
-        printf("Valor fora do intervalo [-1, 1]\n");
+        printf("Valor fora do intervalo [valor < 1, valor > 1]\n");
 
     }}
    void ArcCossec(){
@@ -552,7 +552,7 @@ int main() {
 
   // Para ArcCossec(), o caso 11 entrará em ação.
     case 11:
-      ArcCossec ();
+    ArcCossec ();
       break;
   // Break novamente para cessar o funcionamento da função.
 
