@@ -78,7 +78,7 @@ void Tangente() {
 void Cotangente() {
   printf("\nDigite o ângulo em graus: ");
   scanf("%f", &angulo);
-  cotg = (1/sin*(angulo*PI/180)/1/cos*(angulo*PI/180)); // Calculando a cotangente do ângulo.
+  cotg = (1/sin*(angulo*PI/180))*(cos*(angulo*PI/180)); // Calculando a cotangente do ângulo.
   
   // Logo após os cálculos, o resultado é exibido.
   printf("\nA cotangente de %f = %f\n", angulo, cotg);
