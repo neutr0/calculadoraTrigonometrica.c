@@ -176,7 +176,7 @@ void Cotangente() {
   }
      void senoR (){
     double FsenoR;
-  printf("\nDigite o ângulo em radianos (exemplo: 3.14; 6.28): ");
+  printf("\nDigite o ângulo em radianos (exemplo: 3.14; 4.71; 6.28):");
   scanf("%f", &radiano);
 
   FsenoR = sin(radiano); // Cálculo de seno utilizando o comando sin().
@@ -186,7 +186,7 @@ void Cotangente() {
     
 } void cossenoR() {
   double FcossR;
-  printf("\nDigite o ângulo em radianos (exemplo: 3.14; 6.28):");
+  printf("\nDigite o ângulo em radianos (exemplo: 3.14; 4.71; 6.28):");
   scanf("%f", &radiano);
   FcossR = cos(radiano); // Calculando o cosseno do ângulo.
   
@@ -195,7 +195,7 @@ void Cotangente() {
 } 
 void tangenteR(){
     double FtangR;
-    printf("\nDigite o ângulo em radianos (exemplo: 3.14; 6.28):");
+    printf("\nDigite o ângulo em radianos (exemplo: 3.14; 4.71; 6.28):");
     scanf("%f", &radiano);
     FtangR = tan(radiano);
 
@@ -204,7 +204,7 @@ void tangenteR(){
 }
 void SecanteR(){
     double FsecR;
-    printf("\nDigite o ângulo em radianos (exemplo: 3.14; 6.28):");
+    printf("\nDigite o ângulo em radianos (exemplo: 3.14; 4.71; 6.28):");
     scanf("%f", &radiano);
     FsecR = 1/cos(radiano);
     // Calculando a secante do ângulo.
@@ -214,7 +214,7 @@ void SecanteR(){
  }
  void CossecanteR() {
     double FcossecR;
-    printf("\nDigite o ângulo em radianos (exemplo: 3.14; 6.28):");
+    printf("\nDigite o ângulo em radianos (exemplo: 3.14; 4.71; 6.28):");
     scanf("%f", &radiano);
     FcossecR = 1/sin(radiano);
     // Calculando a cossecante do ângulo.
@@ -224,7 +224,7 @@ void SecanteR(){
 
     void CotangenteR() {
         double FcotgR;
-        printf("\nDigite o ângulo em radianos (exemplo: 3.14; 6.28):");
+        printf("\nDigite o ângulo em radianos (exemplo: 3.14; 4.71; 6.28):");
         scanf("%f", &radiano);
         FcotgR = 1/tan(radiano);
         // Calculando a cotangente do ângulo.
