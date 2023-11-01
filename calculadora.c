@@ -504,7 +504,7 @@ int main() {
    
   // Para void Tangente(), o caso 3 entrará em ação.
     case 3:
-     Tangente();   
+      Tangente();   
       break;
   // Break novamente para cessar o funcionamento da função.
     
@@ -522,7 +522,7 @@ int main() {
 
   // Para void Cotangente(), o caso 6 entrará em ação.
     case 6:
-     Cotangente ();
+      Cotangente ();
       break;
   // Break novamente para cessar o funcionamento da função.
 
@@ -546,7 +546,7 @@ int main() {
     
   // Para ArcSec(), o caso 7 entrará em ação.
     case 10:
-    ArcSec ();
+      ArcSec ();
       break;
   // Break novamente para cessar o funcionamento da função.
 
