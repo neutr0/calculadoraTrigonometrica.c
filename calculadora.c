@@ -115,39 +115,6 @@ void Cotangente() {
     } else {
         printf("Valor fora do intervalo [-1, 1]\n");
     }}
-// void para criar a função que calculará o arco-sec do ângulo determinado pelo usuário.
-
-   void ArcSec(){
-    double valor;
-     printf("Digite um valor entre -1 e 1: ");
-     scanf("%lf", &valor);
-    if ( valor >= 1 || valor <= -1) {
-        double arco_sec = 1/acos(valor) * (180.0 / PI);
-        printf("\nO arco-tangente de %lf é %.2f graus\n", valor, arco_sec);
-    } else {
-        printf("Valor fora do intervalo [valor < 1, valor > 1]\n");
-
-    }}
-   void ArcCossec(){
-    double valor;
-     printf("Digite um valor entre -1 e 1: ");
-     scanf("%lf", &valor);
-    if (-1.0 <= valor && valor <= 1.0) {
-        double arco_cossec = 1/sin(valor) * (180.0 / PI);
-        printf("\nO arco-cossecante de %lf é %.2f graus\n", valor, arco_cossec);
-    } else {
-        printf("Valor fora do intervalo [-1, 1]\n");
-    }} 
-   void ArcCotang(){
-    double valor;
-     printf("Digite um valor entre -1 e 1: ");
-     scanf("%lf", &valor);
-    if (-1.0 <= valor && valor <= 1.0) {
-        double arco_cotang = 1/atan(valor) * (180.0 / PI);
-        printf("\nO arco-tangente de %lf é %.2f graus\n", valor, arco_cotang);
-    } else {
-        printf("Valor fora do intervalo [-1, 1]\n");
-    }}
     void mostrarOPgraus(){
 
   printf("\n 1-Seno");
@@ -177,15 +144,6 @@ void Cotangente() {
   printf("\n 9-Arco Tangente");
   // Opção 9, remete à void ArcTg()
 
-  printf("\n 10-Arco Secante"); 
-  // Opção 10, remete à void ArcSec()
-
-  printf("\n 11-Arco Cossecante"); 
-  // Opção 11, remete à void ArcCossec()
-
-  printf("\n 12-Arco Cotangente"); 
-  // Opção 12, remete à void ArcCotg()
-
   } void mostrarOPradianos (){
     
   printf("\n 1-Seno");
@@ -214,145 +172,97 @@ void Cotangente() {
 
   printf("\n 9-Arco Tangente");
   // Opção 9, remete à void ArcTg()
-
-  printf("\n 10-Arco Secante"); 
-  // Opção 10, remete à void ArcSec()
-
-  printf("\n 11-Arco Cossecante"); 
-  // Opção 11, remete à void ArcCossec()
-
-  printf("\n 12-Arco Cotangente"); 
-  // Opção 12, remete à void ArcCotg()
     
   }
      void senoR (){
     double FsenoR;
-  printf("\nDigite o ângulo em radianos: ");
+  printf("\nDigite o ângulo em radianos (exemplo: 3.14; 6.28): ");
   scanf("%f", &radiano);
-  angulo = radiano*180/PI;
-  FsenoR = sin(angulo*180/PI); // Cálculo de seno utilizando o comando sin().
+
+  FsenoR = sin(radiano); // Cálculo de seno utilizando o comando sin().
 
   //Exibindo o resultado do cálculo de seno.
-  printf("\nO seno de %lf = %f\n", radiano, FsenoR); 
+  printf("\nO seno de %.2lf = %f\n", radiano, FsenoR); 
     
 } void cossenoR() {
   double FcossR;
-  printf("\nDigite o ângulo em radianos: ");
+  printf("\nDigite o ângulo em radianos (exemplo: 3.14; 6.28):");
   scanf("%f", &radiano);
-  angulo = radiano*180/PI;
-  FcossR = cos(angulo*180/PI); // Calculando o cosseno do ângulo.
+  FcossR = cos(radiano); // Calculando o cosseno do ângulo.
   
   // Logo após os cálculos, o resultado é exibido.
-  printf("\nO cosseno de %lf = %f\n", radiano, FcossR);
+  printf("\nO cosseno de %.2lf = %f\n", radiano, FcossR);
 } 
 void tangenteR(){
     double FtangR;
-    printf("\nDigite o ângulo em radianos: ");
+    printf("\nDigite o ângulo em radianos (exemplo: 3.14; 6.28):");
     scanf("%f", &radiano);
-    angulo = radiano*180/PI;
-    FtangR = tan(angulo*PI/180); 
-    printf("\nO cosseno de %lf = %f\n", radiano, FtangR);
+    FtangR = tan(radiano);
+
+    printf("\nO cosseno de %lf = %.2f\n", radiano, FtangR);
 
 }
 void SecanteR(){
     double FsecR;
-    printf("\nDigite o ângulo em radianos: ");
+    printf("\nDigite o ângulo em radianos (exemplo: 3.14; 6.28):");
     scanf("%f", &radiano);
-    angulo = radiano*180/PI;
-    FsecR = 1/cos(angulo*PI/180);
+    FsecR = 1/cos(radiano);
     // Calculando a secante do ângulo.
   
     // Logo após os cálculos, o resultado é exibido.
-     printf("\nA secante de %f rad's = %f\n", radiano, FsecR);
+     printf("\nA secante de %f = %f\n", radiano, FsecR);
  }
  void CossecanteR() {
     double FcossecR;
-    printf("\nDigite o ângulo em radianos: ");
+    printf("\nDigite o ângulo em radianos (exemplo: 3.14; 6.28):");
     scanf("%f", &radiano);
-    angulo = radiano*180/PI;
-    FcossecR = 1/sin(angulo*PI/180);
+    FcossecR = 1/sin(radiano);
     // Calculando a cossecante do ângulo.
   
     // Logo após os cálculos, o resultado é exibido.
-    printf("\nA cossecante de %f rad's = %f\n", radiano, FcossecR);}
+    printf("\nA cossecante de %f = %f\n", radiano, FcossecR);}
 
     void CotangenteR() {
         double FcotgR;
-        printf("\nDigite o ângulo em radianos: ");
+        printf("\nDigite o ângulo em radianos (exemplo: 3.14; 6.28):");
         scanf("%f", &radiano);
-        angulo = radiano*180/PI;
-        FcotgR = 1/sin(angulo*PI/180)/cos(angulo*PI); 
+        FcotgR = 1/tan(radiano);
         // Calculando a cotangente do ângulo.
   
   // Logo após os cálculos, o resultado é exibido.
-  printf("\nA cotangente de %f rad's = %f\n", radiano, FcotgR);}
+  printf("\nA cotangente de %f = %f\n", radiano, FcotgR);}
 
  void arcSenR() {
-     printf("Digite um valor entre -1 e 1: ");
+     printf("Digite um valor menor que -1 ou maior que 1: ");
      scanf("%f", &radiano);
     angulo = radiano*180/PI;
-    if (-1.0 <= angulo && angulo <= 1.0) {
-        double Arcs = asin(angulo) * (180.0 / PI);
+    if (-1.0 <= radiano && radiano >= 1.0) {
+        double Arcs = asin(radiano);
         printf("\nO arco-seno de %lf é %.2f graus\n", radiano, Arcs);
     } else {
-        printf("Valor fora do intervalo [-1, 1]\n");
+        printf("Valor fora do intervalo");
     }}
 
     void arccosR() {
-     printf("Digite um valor entre -1 e 1: ");
+     printf("Digite um valor menor que -1 ou maior que 1: ");
      scanf("%f", &radiano);
-    angulo = radiano*180/PI;
-    if (-1.0 <= angulo && angulo <= 1.0) {
-        double Arcos = acos(angulo) * (180.0 / PI);
+    if (-1.0 <= radiano && radiano >= 1.0) {
+        double Arcos = acos(radiano);
         printf("\nO arco-cosseno de %lf é %.2f graus\n", radiano, Arcos);
     } else {
-        printf("Valor fora do intervalo [-1, 1]\n");
+        printf("Valor fora do intervalo");
     }}
     
      void arcTgR() {
-     printf("Digite um valor entre -1 e 1: ");
+     printf("Digite um valor menor que -1 ou maior que 1: ");
      scanf("%f", &radiano);
-    angulo = radiano*180/PI;
-    if (-1.0 <= angulo && angulo <= 1.0) {
-        double Arctg = atan(angulo) * (180.0 / PI);
+    if (-1.0 <= radiano && radiano >= 1.0){
+        double Arctg = atan(radiano);
         printf("\nO arco-tangente de %lf é %.2f graus\n", radiano, Arctg);
     } else {
-        printf("Valor fora do intervalo [-1, 1]\n");
+        printf("Valor fora do intervalo");
     }} 
     
-     void arcsec() {
-     printf("Digite um valor entre -1 e 1: ");
-     scanf("%f", &radiano);
-    angulo = radiano*180/PI;
-    if (-1.0 <= angulo && angulo <= 1.0) {
-        double Arcsecante = 1/cos(angulo) * (180.0 / PI);
-        printf("\nO arco-secante de %lf é %.2f graus\n", radiano, Arcsecante);
-    } else {
-        printf("Valor fora do intervalo [-1, 1]\n");
-    }}
-
-    void arccossecante() {
-     printf("Digite um valor entre -1 e 1: ");
-     scanf("%f", &radiano);
-    angulo = radiano*180/PI;
-    if (-1.0 <= angulo && angulo <= 1.0) {
-        double Arcossecante = 1/sin(angulo) * (180.0 / PI);
-        printf("\nO arco-cossecante de %lf é %.2f graus\n", radiano, Arcossecante);
-    } else {
-        printf("Valor fora do intervalo [-1, 1]\n");
-    }}
-
-     void arccotangente() {
-     printf("Digite um valor entre -1 e 1: ");
-     scanf("%f", &radiano);
-    angulo = radiano*180/PI;
-    if (-1.0 <= angulo && angulo <= 1.0) {
-        double arccotan = 1/tan(angulo) * (180.0 / PI);
-        printf("\nO arco-cotangente de %lf é %.2f graus\n", radiano, arccotan);
-    } else {
-        printf("Valor fora do intervalo [-1, 1]\n");
-    }}
-
 
 
 
@@ -362,7 +272,7 @@ void SecanteR(){
 //Abaixo o Menu de escolha que o usuário irá ver e selecionar a função que deseja ser calculada, e depois determinará o ângulo.
 
 int main() {
-  int op, op2, num1 = 1, num2 = 2;
+  int op, op2;
   // Cabeçalho do Menu.
   printf("\n============== TRIGONOMETRIA CÁLCULO ==============\n");   
   
@@ -459,24 +369,7 @@ int main() {
       arcTgR ();
       break;
   // Break novamente para cessar o funcionamento da função.  
-    
-  // Para ArcSec(), o caso 7 entrará em ação.
-    case 10:
-      arcsec ();
-      break;
-  // Break novamente para cessar o funcionamento da função.
 
-  // Para ArcCossec(), o caso 11 entrará em ação.
-    case 11:
-      arccossecante ();
-      break;
-  // Break novamente para cessar o funcionamento da função.
-
-  // Para ArcCotang(), o caso 12 entrará em ação.
-    case 12:
-      arccotangente ();
-      break;
-  // Break novamente para cessar o funcionamento da função.
      
   // Caso seja digitada alguma opção que não existe no Menu, a seguinte mensagem será exibida. 
     default:  
@@ -542,6 +435,34 @@ int main() {
     case 9:
       ArcTg ();
       break;
+
+     
+  // Caso seja digitada alguma opção que não existe no Menu, a seguinte mensagem será exibida. 
+    default:  
+      printf("\nErro! Opção inexistente.\n");   
+      break;
+  } 
+  }
+  return 0;
+
+}
+
+/*
+===================================== CASOS TESTES ======================================================================
+
+
+void FcossecR() {
+    double FcossecR;
+    printf("\nDigite o ângulo em radianos: ");
+    scanf("%f", &radiano);
+    angulo = radiano*180/PI;
+    FcossecR = 1/sin(angulo*PI/180);
+    // Calculando a cossecante do ângulo.
+  
+    // Logo após os cálculos, o resultado é exibido.
+    printf("\nA cossecante de %f rad's = %f\n", radiano, FcossecR);}
+
+
   // Break novamente para cessar o funcionamento da função.  
     
   // Para ArcSec(), o caso 7 entrará em ação.
@@ -561,30 +482,108 @@ int main() {
       ArcCotang ();
       break;
   // Break novamente para cessar o funcionamento da função.
-     
-  // Caso seja digitada alguma opção que não existe no Menu, a seguinte mensagem será exibida. 
-    default:  
-      printf("\nErro! Opção inexistente.\n");   
+
+
+    // Para ArcSec(), o caso 7 entrará em ação.
+    case 10:
+      arcsec ();
       break;
-  } 
-  }
-  return(0);
+  // Break novamente para cessar o funcionamento da função.
 
-}
-/*
+  // Para ArcCossec(), o caso 11 entrará em ação.
+    case 11:
+      arccossecante ();
+      break;
+  // Break novamente para cessar o funcionamento da função.
 
-===================================== CASOS TESTES ======================================================================
+  // Para ArcCotang(), o caso 12 entrará em ação.
+    case 12:
+      arccotangente ();
+      break;
+  // Break novamente para cessar o funcionamento da função.
 
-
-void FcossecR() {
-    double FcossecR;
-    printf("\nDigite o ângulo em radianos: ");
-    scanf("%f", &radiano);
+   void arcsec() {
+     printf("Digite um valor entre -1 e 1: ");
+     scanf("%f", &radiano);
     angulo = radiano*180/PI;
-    FcossecR = 1/sin(angulo*PI/180);
-    // Calculando a cossecante do ângulo.
+    if (-1.0 <= angulo && angulo <= 1.0) {
+        double Arcsecante = 1/cos(angulo) * (180.0 / PI);
+        printf("\nO arco-secante de %lf é %.2f graus\n", radiano, Arcsecante);
+    } else {
+        printf("Valor fora do intervalo [-1, 1]\n");
+    }}
+
+    void arccossecante() {
+     printf("Digite um valor entre -1 e 1: ");
+     scanf("%f", &radiano);
+    angulo = radiano*180/PI;
+    if (-1.0 <= angulo && angulo <= 1.0) {
+        double Arcossecante = 1/sin(angulo) * (180.0 / PI);
+        printf("\nO arco-cossecante de %lf é %.2f graus\n", radiano, Arcossecante);
+    } else {
+        printf("Valor fora do intervalo [-1, 1]\n");
+    }}
+
+     void arccotangente() {
+     printf("Digite um valor entre -1 e 1: ");
+     scanf("%f", &radiano);
+    angulo = radiano*180/PI;
+    if (-1.0 <= angulo && angulo <= 1.0) {
+        double arccotan = 1/tan(angulo) * (180.0 / PI);
+        printf("\nO arco-cotangente de %lf é %.2f graus\n", radiano, arccotan);
+    } else {
+        printf("Valor fora do intervalo [-1, 1]\n");
+
+        
+  printf("\n 10-Arco Secante"); 
+  // Opção 10, remete à void ArcSec()
+
+  printf("\n 11-Arco Cossecante"); 
+  // Opção 11, remete à void ArcCossec()
+
+  printf("\n 12-Arco Cotangente"); 
+  // Opção 12, remete à void ArcCotg()
   
-    // Logo após os cálculos, o resultado é exibido.
-    printf("\nA cossecante de %f rad's = %f\n", radiano, FcossecR);}*/
+  printf("\n 10-Arco Secante"); 
+  // Opção 10, remete à void ArcSec()
 
+  printf("\n 11-Arco Cossecante"); 
+  // Opção 11, remete à void ArcCossec()
 
+  printf("\n 12-Arco Cotangente"); 
+  // Opção 12, remete à void ArcCotg()
+
+     void ArcSec(){
+    double valor, graus;
+     printf("Digite um valor entre -1 e 1: ");
+     scanf("%lf", &valor);
+    if ( valor >= 1 || valor <= -1) {
+        double arco_sec = acos(1/angulo);
+        graus = arco_sec*(180/PI);
+        printf("\nO arco-tangente de %lf é %.2f graus\n", valor, arco_sec);
+    } else {
+        printf("Valor fora do intervalo [valor < 1, valor > 1]\n");
+
+    }}
+   void ArcCossec(){
+    double valor;
+     printf("Digite um valor entre -1 e 1: ");
+     scanf("%lf", &valor);
+    if ( valor <= -1 && valor >= 1) {
+        double arco_cossec = 1/sin(valor) * (180.0 / PI);
+        printf("\nO arco-cossecante de %lf é %.2f graus\n", valor, arco_cossec);
+    } else {
+        printf("Valor fora do intervalo [-1, 1]\n");
+    }} 
+   void ArcCotang(){
+    double valor;
+     printf("Digite um valor entre -1 e 1: ");
+     scanf("%lf", &valor);
+    if (-1.0 <= valor && valor <= 1.0) {
+        double arco_cotang = 1/atan(valor) * (180.0 / PI);
+        printf("\nO arco-tangente de %lf é %.2f graus\n", valor, arco_cotang);
+    } else {
+        printf("Valor fora do intervalo [-1, 1]\n");
+    }}
+    }}
+*/
