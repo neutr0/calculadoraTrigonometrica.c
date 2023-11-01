@@ -1,6 +1,7 @@
-/* Olá, nós do grupo composto por: Lucas S., João Pedro S., Luan V., e Henrique M. inicialmente faríamos o "Cardápio de Carros";
-No entanto, notamos que não seria possível realizá-lo, uma vez que seria necessário utilizar banco de dados. Dessa forma, decidimos mudar
-o tema do trabalho para "Calculadora de Funções Trigonométricas, ou seja, desde a função seno até a função arco cotangente. 
+/* Olá, nós do grupo composto por: Lucas Santos, João Pedro Santos, Luan Vitor Paiva e Henrique Mendes.
+Inicialmente faríamos o projeto de tema "Cardápio de Carros";
+No entanto, notamos que não seria possível realizá-lo, uma vez que seria necessário utilizar banco de dados. Diante disso, decidimos mudar
+o tema do trabalho para "Calculadora de Funções Trigonométricas", ou seja, desde a função seno até a função arco cotangente. 
 Atenciosamente. */
 
 
@@ -32,7 +33,8 @@ void Seno() {
 void Cosseno() {
   printf("\nDigite o ângulo em graus: ");
   scanf("%f", &angulo);
-  coss = cos(angulo*PI/180); // Calculando o coseno do ângulo.
+  coss = cos(angulo*PI/180); 
+  // Calculando o coseno do ângulo.
   
   // Logo após os cálculos, o resultado é exibido.
   printf("\nO cosseno de %f = %f\n", angulo, coss);
@@ -78,9 +80,11 @@ void Tangente() {
 void Cotangente() {
   printf("\nDigite o ângulo em graus: ");
   scanf("%f", &angulo);
-  cotg = 1/sin(angulo*PI/180)/cos(angulo*PI); // Calculando a cotangente do ângulo.
+  cotg = 1/sin(angulo*PI/180)/cos(angulo*PI); 
+  // Calculando a cotangente do ângulo.
   
-  // Logo após os cálculos, o resultado é exibido.
+// Logo após os cálculos, o resultado é exibido.
+
   printf("\nA cotangente de %f = %f\n", angulo, cotg);
 
 } void ArcSen() {
@@ -93,6 +97,7 @@ void Cotangente() {
     } else {
         printf("Valor fora do intervalo [-1, 1]\n");
     }}
+
 // void para criar a função que calculará o arco-cosseno do ângulo determinado pelo usuário.
     
     void ArcCos(){
@@ -115,7 +120,7 @@ void Cotangente() {
     } else {
         printf("Valor fora do intervalo [-1, 1]\n");
     }}
-// void para criar a função que calculará o arco-sec do ângulo determinado pelo usuário.
+// void para criar a função que calculará o arco-sececante do ângulo determinado pelo usuário.
 
    void ArcSec(){
     double valor;
@@ -126,7 +131,8 @@ void Cotangente() {
         printf("\nO arco-tangente de %lf é %.2f graus\n", valor, arco_sec);
     } else {
         printf("Valor fora do intervalo [-1, 1]\n");
-
+    
+// void para criar a função que calculará o arco-cossecante do ângulo determinado pelo usuário.
     }}
    void ArcCossec(){
     double valor;
@@ -137,6 +143,8 @@ void Cotangente() {
         printf("\nO arco-cossecante de %lf é %.2f graus\n", valor, arco_cossec);
     } else {
         printf("Valor fora do intervalo [-1, 1]\n");
+      
+// void para criar a função que calculará o arco-cotangente do ângulo determinado pelo usuário.
     }} 
    void ArcCotang(){
     double valor;
