@@ -225,7 +225,7 @@ void Cotangente() {
   // Opção 12, remete à void ArcCotg()
     
   }
-     void senoR (){
+  void senoR () {
     double FsenoR;
   printf("\nDigite o ângulo em radianos: ");
   scanf("%f", &radiano);
@@ -235,7 +235,8 @@ void Cotangente() {
   //Exibindo o resultado do cálculo de seno.
   printf("\nO seno de %lf = %f\n", radiano, FsenoR); 
     
-} void cossenoR() {
+}
+void cossenoR() {
   double FcossR;
   printf("\nDigite o ângulo em radianos: ");
   scanf("%f", &radiano);
@@ -245,7 +246,7 @@ void Cotangente() {
   // Logo após os cálculos, o resultado é exibido.
   printf("\nO cosseno de %lf = %f\n", radiano, FcossR);
 } 
-void tangenteR(){
+void tangenteR() {
     double FtangR;
     printf("\nDigite o ângulo em radianos: ");
     scanf("%f", &radiano);
@@ -254,7 +255,7 @@ void tangenteR(){
     printf("\nO cosseno de %lf = %f\n", radiano, FtangR);
 
 }
-void SecanteR(){
+void SecanteR() {
     double FsecR;
     printf("\nDigite o ângulo em radianos: ");
     scanf("%f", &radiano);
@@ -274,19 +275,20 @@ void SecanteR(){
     // Calculando a cossecante do ângulo.
   
     // Logo após os cálculos, o resultado é exibido.
-    printf("\nA cossecante de %f rad's = %f\n", radiano, FcossecR);}
-
-    void CotangenteR() {
-        double FcotgR;
-        printf("\nDigite o ângulo em radianos: ");
-        scanf("%f", &radiano);
-        angulo = radiano*180/PI;
-        FcotgR = 1/sin(angulo*PI/180)/cos(angulo*PI); 
-        // Calculando a cotangente do ângulo.
+    printf("\nA cossecante de %f rad's = %f\n", radiano, FcossecR);
+ }
+ void CotangenteR() {
+    double FcotgR;
+    printf("\nDigite o ângulo em radianos: ");
+    scanf("%f", &radiano);
+    angulo = radiano*180/PI;
+    FcotgR = 1/sin(angulo*PI/180)/cos(angulo*PI); 
+    // Calculando a cotangente do ângulo.
   
   // Logo após os cálculos, o resultado é exibido.
-  printf("\nA cotangente de %f rad's = %f\n", radiano, FcotgR);}
-
+  printf("\nA cotangente de %f rad's = %f\n", radiano, FcotgR);
+ 
+ }
  void arcSenR() {
      printf("Digite um valor entre -1 e 1: ");
      scanf("%f", &radiano);
