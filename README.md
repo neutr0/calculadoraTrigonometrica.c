@@ -1,5 +1,6 @@
-# calculadoraTrigonometrica.c
+# Calculadora de Funções Trigonométricas
 Trabalho de IP.
-Moivação:
-A ideia inicial de um "Cardápio de Carros" infelizmente não pôde ser desenvolvida pois teríamos de utilizar de diferentes ferramentas e recursos muito mais complexos do que os quais ja tinhamos conhecimento. 
-Um projeto simples, porém funcional.
+Olá, nós do grupo composto por: Lucas S., João Pedro S., Luan V., Mateus F. e Henrique M. inicialmente faríamos o "Cardápio de Carros";
+No entanto, notamos que não seria possível realizá-lo, uma vez que seria necessário utilizar banco de dados. Dessa forma, decidimos mudar
+o tema do trabalho para "Calculadora de Funções Trigonométricas, ou seja, desde a função seno até a função arco cotangente. 
+Atenciosamente.
